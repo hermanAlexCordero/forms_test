@@ -1,7 +1,7 @@
 ---
 name: Prime Issue Report
 about: Report an Issue with Report Stream
-title: ''
+title: Report Stream Issue
 labels: ''
 assignees: ''
 
