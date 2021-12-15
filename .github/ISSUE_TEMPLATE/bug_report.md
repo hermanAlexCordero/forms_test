@@ -1,6 +1,6 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Prime Issue Report
+about: Report an Issue with Report Stream
 title: ''
 labels: ''
 assignees: ''
