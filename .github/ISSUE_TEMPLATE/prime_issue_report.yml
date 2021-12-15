@@ -1,20 +1,20 @@
-name: Prime Issue Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Report Stream Issue Report
+description: Report an issue with Report Stream
+title: "[Issue]: "
+labels: ["issue", "triage"]
 assignees: ["Herman Cordero","Adrian Brewster"]
   
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this Report Stream report!
   - type: input
     id: contact
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      placeholder: ex. youremail@example.com
     validations:
       required: false
   - type: textarea
@@ -23,17 +23,17 @@ body:
       label: What happened?
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: "not what I expected!"
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: What version of Report Stream?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - HL7
+        - CSV Uploader
     validations:
       required: true
   - type: dropdown
