@@ -1,6 +1,6 @@
 name: Report Stream Issue Report
 description: Report an issue with Report Stream
-title: "[Issue]: "
+title: "[Type your issue here]: "
 labels: ["issue", "triage"]
 assignees: ["Herman Cordero","Adrian Brewster"]
   
