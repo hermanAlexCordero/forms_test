@@ -35,4 +35,4 @@ body:
       required: true
   - type: textarea
     id: expected behaviour
-      label: Issue description
+    label: Issue description
