@@ -1,6 +1,6 @@
 name: Report Stream Issue Report
 description: Report an issue with Report Stream
-title: "[Type your issue here]: "
+title: "[Type a short name for your issue here]: "
 labels: ["issue", "triage"]
 assignees: ["Herman Cordero","Adrian Brewster"]
   
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this Report Stream report
+        Thanks for taking the time to fill out this Report Stream report!
   - type: input
     id: name
     attributes:
@@ -29,13 +29,61 @@ body:
     id: email
     attributes:
       label: Contact Email
-      description: How do we contact you
+      description: How do we contact you?
       placeholder: ex. youremail@example.com
+    validations:
+      required: true
+  - type: textarea
+    id: issue_description
+    attributes:
+      label: Issue description
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "not what I expected!"
     validations:
       required: true
   - type: textarea
     id: expected behaviour
     attributes:
       label: Issue description
-      description: How do we contact you
-      placeholder: ex. youremail@example.com
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "not what I expected!"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Report Stream?
+      options:
+        - HL7
+        - CSV Uploader
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+
