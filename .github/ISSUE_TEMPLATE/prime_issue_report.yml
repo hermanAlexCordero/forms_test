@@ -29,7 +29,7 @@ body:
     id: email
     attributes:
       label: Contact Email
-      description: How do we contact you?
+      description: How do we contact you
       placeholder: ex. youremail@example.com
     validations:
       required: true
@@ -37,5 +37,5 @@ body:
     id: expected behaviour
     attributes:
       label: Issue description
-      description: How do we contact you?
+      description: How do we contact you
       placeholder: ex. youremail@example.com
