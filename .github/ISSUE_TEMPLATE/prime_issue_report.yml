@@ -49,5 +49,13 @@ body:
       placeholder: mm/dd/yyyy
     validations:
       required: true
-
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Issue severity
+      description: How severe is this issue
+      options:
+        - Low
+        - Medium
+		    - High
 
