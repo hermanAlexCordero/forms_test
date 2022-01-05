@@ -33,7 +33,7 @@ body:
       placeholder: ex. youremail@example.com
     validations:
       required: true
-  - type: textarea
+   - type: textarea
     id: expected behaviour
     attributes:
       label: Issue description
