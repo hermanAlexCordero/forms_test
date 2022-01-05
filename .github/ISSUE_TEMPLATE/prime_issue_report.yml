@@ -3,7 +3,6 @@ description: Report an issue with Report Stream
 title: "[Type a short name for your issue here]: "
 labels: ["issue", "triage"]
 assignees: ["Herman Cordero","Adrian Brewster"]
-  
 body:
   - type: markdown
     attributes:
@@ -51,7 +50,6 @@ body:
       value: "not what I expected!"
     validations:
       required: true
-
   - type: dropdown
     id: version
     attributes:
