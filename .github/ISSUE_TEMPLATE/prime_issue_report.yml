@@ -46,8 +46,8 @@ body:
     attributes:
       label: expected behaviour
       description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "not what I expected!"
+      placeholder: Tell us what you would like to see!
+      value: "this is what I expected!"
     validations:
       required: true
   - type: input
