@@ -59,13 +59,3 @@ body:
       placeholder: mm/dd/yyyy
     validations:
       required: true
-  - type: dropdown
-    id: severity of the issue
-    attributes:
-      label: How critical is this issue?
-      multiple: false
-      options:
-        - Low
-        - Medium
-        - High
-
