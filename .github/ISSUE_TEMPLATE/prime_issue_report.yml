@@ -51,11 +51,3 @@ body:
       value: "not what I expected!"
     validations:
       required: true
-  - type: input
-    id: issuedate
-    attributes:
-      label: Date Issue Started
-      description: Date Issue Started
-      placeholder: mm/dd/yyyy
-    validations:
-      required: true
