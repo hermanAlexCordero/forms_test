@@ -32,31 +32,4 @@ body:
       placeholder: ex. youremail@example.com
     validations:
       required: true
-  - type: textarea
-    id: issue_description
-    attributes:
-      label: Issue description
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "not what I expected!"
-    validations:
-      required: true
-  - type: textarea
-    id: expected behaviour
-    attributes:
-      label: Issue description
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "not what I expected!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of Report Stream?
-      options:
-        - HL7
-        - CSV Uploader
-    validations:
-      required: true
+
