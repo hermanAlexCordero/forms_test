@@ -68,7 +68,6 @@ body:
         - Low
         - Medium
         - High
-      render: shell
   - type: checkboxes
     id: terms
     attributes:
