@@ -33,3 +33,12 @@ body:
       placeholder: ex. youremail@example.com
     validations:
       required: true
+- type: textarea
+    id: issue_description
+    attributes:
+      label: Issue description
+      description: Tell us what happen
+      placeholder: Tell us what you see!
+      value: "not what I expected!"
+    validations:
+      required: true
