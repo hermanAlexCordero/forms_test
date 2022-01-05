@@ -35,6 +35,7 @@ body:
       required: true
   - type: textarea
     id: expected behaviour
+    attributes:
       label: Issue description
       description: How do we contact you?
       placeholder: ex. youremail@example.com
