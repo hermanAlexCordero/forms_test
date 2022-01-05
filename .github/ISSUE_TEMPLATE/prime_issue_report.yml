@@ -10,53 +10,70 @@ body:
       value: |
         Thanks for taking the time to fill out this Report Stream report!
   - type: input
-    id: contact
+    id: name
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      label: Contact Name
+      description: Name of the person submitting this report
+      placeholder: Mr. John Administrator
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Submitting Organization
+      description: Name of the organization submitting this report
+      placeholder: Louisiana Department of Health
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Contact Email
+      description: How do we contact you?
       placeholder: ex. youremail@example.com
     validations:
-      required: false
+      required: true
   - type: textarea
-    id: what-happened
+    id: issue_description
     attributes:
-      label: What happened?
+      label: Issue description
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "not what I expected!"
     validations:
       required: true
-  - type: dropdown
-    id: version
+  - type: textarea
+    id: expected behaviour
     attributes:
-      label: Version
-      description: What version of Report Stream?
-      options:
-        - HL7
-        - CSV Uploader
+      label: Issue description
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "not what I expected!"
+    validations:
+      required: true
+  - type: input
+    id: issuedate
+    attributes:
+      label: Date Issue Started
+      description: Date Issue Started
+      placeholder: mm/dd/yyyy
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: severity of the issue
     attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
+      label: How critical is this issue?
+      multiple: false
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+        - Low
+        - Medium
+        - High
       render: shell
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Terms and Conditions
+      description: By submitting this issue, you agree with our terms and conditions (https://www.simplereport.gov/terms-of-service/)
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to follow this project's terms of service
           required: true
