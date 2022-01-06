@@ -44,7 +44,7 @@ body:
   - type: textarea
     id: expected_behaviour
     attributes:
-      label: expected behaviour
+      label: Expected behaviour
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you would like to see!
       value: "this is what I expected!"
